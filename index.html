@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <title>YAKU</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">YAKU</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">NOSOTROS</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">COMITÉS</a></li>
+                    <li><a href="#no" onclick="seleccionar()">NOTICIAS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">ESTATUS Y REGLAMENTO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/yaku.jpeg" alt="">
+            </div>
+            <h1>YAKU</h1>
+            <h2>MOVIMIENTO REGIONAL YAKU APURÍMAC</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Nosotros</h2>
+            <p><span>Hola, somos el Movmiento regional Yaku Apurímac </span> Trabajamos por el bienestar de Apurímac, promoviendo la equidad, el desarrollo sostenible y la participación ciudadana.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Creación</strong>
+                            21 de Septiembre del año 2023
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            900233301
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            MOVIMIENTORYAKU@GMAIL.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.movimientoyaku.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            JR. APURÍMAC Nº 249, TALVERA - APURÍMAC
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-scale-balanced"></i>
+                            <span>JUSTICIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-military-to-person"></i>
+                            <span>IGUALDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-circle-plus"></i>
+                            <span>ÉTICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-face-smile"></i>
+                            <span>HONESTIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-l"></i>
+                            <span>LIBERTAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>AMOR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-money-bill"></i>
+                            <span>ECONOMÍA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-arrow-up-from-line"></i>
+                            <span>RESPETO</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar Información<i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS 
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Drupa</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                Professional Skills 
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- SECCION CURRICULUM 
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">Universidad de Oxford</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+<!-- SECCION NOTICIAS -->
+<section id="noticias" class="noticias">
+    <div class="contenido-seccion">
+        <h2>NOTICIAS</h2>
+        <div class="noticias-galeria-container">
+            <button class="left-arrow" onclick="scrollHorizontal('galeria-noticias', 'left')"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="noticias-galeria" id="galeria-noticias">
+                <div class="noticia">
+                    <img src="img/sintesis1.jpeg" alt="Noticia 1">
+                    <h3>Noticia 1</h3>
+                </div>
+                <div class="noticia">
+                    <img src="img/sintesis2.jpeg" alt="Noticia 2">
+                    <h3>Noticia 2</h3>
+                </div>
+                <div class="noticia document-card">
+                    <div class="iframe-preview-container">
+                        <iframe src="img/pdfsintesis.pdf#toolbar=0&navpanes=0&scrollbar=0" class="iframe-preview" title="Síntesis"></iframe>
+                    </div>
+                    <h3>Síntesis</h3>
+                    <a href="img/pdfsintesis.pdf" target="_blank" class="btn-descarga">Abrir PDF</a>
+                </div>
+            </div>
+            <button class="right-arrow" onclick="scrollHorizontal('galeria-noticias', 'right')"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+<!-- SECCION AVISOS Y DOCUMENTOS -->
+<section id="avisos" class="noticias" style="background-color: #e8ecf0;">
+    <div class="contenido-seccion">
+        <h2>AVISOS Y DOCUMENTOS</h2>
+        <div class="noticias-galeria-container">
+            <button class="left-arrow" onclick="scrollHorizontal('galeria-avisos', 'left')"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="noticias-galeria" id="galeria-avisos">
+                <div class="noticia">
+                    <img src="DOCUMENTOS/aviso.jpeg" alt="Aviso">
+                    <h3>Aviso Importante</h3>
+                </div>
+                <div class="noticia document-card">
+                    <div class="iframe-preview-container">
+                        <iframe src="DOCUMENTOS/edicion_impresa.pdf#toolbar=0&navpanes=0&scrollbar=0" class="iframe-preview" title="Edición Impresa"></iframe>
+                    </div>
+                    <h3>Edición Impresa 31-07</h3>
+                    <a href="DOCUMENTOS/edicion_impresa.pdf" target="_blank" class="btn-descarga">Abrir PDF</a>
+                </div>
+                <div class="noticia document-card">
+                    <div class="doc-icon"><i class="fa-solid fa-file-word"></i></div>
+                    <h3>Convocatoria a Asamblea</h3>
+                    <a href="DOCUMENTOS/convocatoria.docx" target="_blank" class="btn-descarga">Descargar DOCX</a>
+                </div>
+            </div>
+            <button class="right-arrow" onclick="scrollHorizontal('galeria-avisos', 'right')"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- SECCION METAS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>MISIÓN</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/i1.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Representación democrática</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e2.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Justicia social</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e3.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Bienestar colectivo</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e4.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diálogo y cooperación</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e5.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sostenibilidad ambiental</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/e6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Desarrollo económico</h3>
+                        <p>Fotografía</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubi.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                JR. APURÍMAC Nº 249, Talavera
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 900233301 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: MOVIMIENTORYAKU@GMAIL.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/51900233301" class="whatsapp-float" target="_blank" title="Contáctanos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Modal Convocatoria -->
+    <div id="modal-convocatoria" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            <div class="modal-header">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>¡ATENCIÓN!</h2>
+            </div>
+            <div class="modal-body">
+                <h3>Convocatoria a Asamblea Regional</h3>
+                <p>Te invitamos a participar y revisar nuestro documento oficial de convocatoria.</p>
+                <div class="doc-icon"><i class="fa-solid fa-file-word"></i></div>
+                <a href="DOCUMENTOS/convocatoria.docx" target="_blank" class="btn-descarga">Descargar Documento</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
