@@ -44,13 +44,12 @@ window.onscroll = function(){
 function scrollHorizontal(containerId, direction) {
     const container = document.getElementById(containerId);
     if (!container) return;
-    const scrollAmount = 300; // Define la cantidad de desplazamiento en píxeles
+    const scrollAmount = 320; // Define la cantidad de desplazamiento en píxeles (ancho tarjeta + gap)
     
-    if (direction === 'left') {
-        container.scrollLeft -= scrollAmount;
-    } else {
-        container.scrollLeft += scrollAmount;
-    }
+    container.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+    });
 }
 
 // Lógica del Modal de Convocatoria

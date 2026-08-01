@@ -748,11 +748,15 @@ footer .arriba{
 
 .noticias-galeria {
     display: flex;
+    flex: 1;
+    min-width: 0;
     overflow-x: auto;
     padding: 20px 0;
     gap: 20px;
-    scroll-behavior: smooth;
     width: 100%;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x pan-y;
     /* Ocultar barra de scroll en navegadores webkit */
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
@@ -773,6 +777,7 @@ footer .arriba{
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    scroll-snap-align: center;
 }
 
 .noticia img {
@@ -847,6 +852,7 @@ footer .arriba{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .left-arrow:hover, .right-arrow:hover {
@@ -867,7 +873,9 @@ footer .arriba{
         font-size: 36px;
     }
     .left-arrow, .right-arrow {
-        display: none; /* En móviles pueden hacer swipe, ocultamos flechas para ahorrar espacio */
+        width: 35px;
+        height: 35px;
+        font-size: 1.2em;
     }
 }
 
